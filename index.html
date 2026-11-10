@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>(Tu Nombre) | Portafolio Web</title>
+  <meta name="description" content="Portafolio personal de (Tu Nombre), desarrollador web frontend junior.">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a href="#inicio" class="nav__logo">&lt;(Tu Nombre)/&gt;</a>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#inicio" class="nav__link">Inicio</a></li>
+        <li><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
+        <li><a href="#formacion" class="nav__link">Formación</a></li>
+        <li><a href="#habilidades" class="nav__link">Habilidades</a></li>
+        <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+        <li><a href="#objetivos" class="nav__link">Objetivos</a></li>
+        <li><a href="#contacto" class="nav__link">Contacto</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Cambiar entre modo claro y oscuro">
+          <span id="theme-icon">🌙</span>
+        </button>
+        <button id="menu-toggle" class="icon-btn nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+          ☰
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero section" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__text reveal">
+          <p class="hero__eyebrow">Hola, soy</p>
+          <h1 class="hero__title">(Tu Nombre)</h1>
+          <h2 class="hero__subtitle">Desarrollador Web Frontend Junior</h2>
+          <p class="hero__desc">
+            Construyo interfaces limpias, accesibles y adaptables. Me gusta convertir ideas
+            en páginas que funcionan igual de bien en un móvil que en un monitor de 27".
+          </p>
+          <div class="hero__buttons">
+            <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+            <a href="#contacto" class="btn btn--ghost">Contactar</a>
+          </div>
+        </div>
+
+        <div class="hero__photo reveal">
+          <div class="avatar">
+            <img src="img/perfil.jpg" alt="Fotografía de perfil de (Tu Nombre)" width="320" height="320">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <h2 class="section__title reveal">Sobre mí</h2>
+        <p class="section__subtitle reveal">Quién soy y cómo trabajo</p>
+
+        <div class="about reveal">
+          <p>
+            Soy una persona curiosa y bastante cabezota con los detalles: si algo no queda
+            alineado, no duermo. Empecé en el desarrollo web por curiosidad y he acabado
+            enganchado al frontend, sobre todo a la parte de maquetación y accesibilidad.
+          </p>
+          <p>
+            Trabajo con HTML semántico, CSS moderno y JavaScript sin frameworks, porque creo
+            que entender la base es lo que después te permite usar cualquier herramienta.
+            Uso Git desde el primer día de cada proyecto y documento todo lo que hago.
+          </p>
+          <ul class="about__facts">
+            <li><strong>Ubicación:</strong> (Tu ciudad, España)</li>
+            <li><strong>Idiomas:</strong> Castellano (nativo), Catalán (nativo), Inglés (B1)</li>
+            <li><strong>Disponibilidad:</strong> Prácticas / Junior · Jornada completa</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FORMACIÓN ===== -->
+    <section class="section section--alt" id="formacion">
+      <div class="container">
+        <h2 class="section__title reveal">Formación</h2>
+        <p class="section__subtitle reveal">Dónde he aprendido lo que sé</p>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <span class="timeline__date">2023 – 2025</span>
+            <h3 class="timeline__title">Grado Superior en Desarrollo de Aplicaciones Web (DAW)</h3>
+            <p class="timeline__place">(Nombre del centro) · (Ciudad)</p>
+            <p class="timeline__desc">
+              Formación en HTML, CSS, JavaScript, bases de datos, Git/GitHub y despliegue de
+              aplicaciones. Proyecto final centrado en interfaces accesibles.
+            </p>
+          </li>
+
+          <li class="timeline__item reveal">
+            <span class="timeline__date">2024</span>
+            <h3 class="timeline__title">Curso de Control de Versiones con Git y GitHub</h3>
+            <p class="timeline__place">(Plataforma / centro) · Online</p>
+            <p class="timeline__desc">
+              Flujo de trabajo con repositorios locales y remotos, ramas, resolución de
+              conflictos y publicación con GitHub Pages.
+            </p>
+          </li>
+
+          <li class="timeline__item reveal">
+            <span class="timeline__date">2021 – 2023</span>
+            <h3 class="timeline__title">Bachillerato Tecnológico</h3>
+            <p class="timeline__place">(Nombre del instituto) · (Ciudad)</p>
+            <p class="timeline__desc">
+              Base en matemáticas, tecnología e informática; primeros contactos con la
+              programación.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== HABILIDADES ===== -->
+    <section class="section" id="habilidades">
+      <div class="container">
+        <h2 class="section__title reveal">Habilidades</h2>
+        <p class="section__subtitle reveal">Tecnologías y herramientas que uso</p>
+
+        <ul class="skills">
+          <li class="skill reveal"><span class="skill__icon">🧩</span><h3>HTML5 semántico</h3><p>Estructura accesible, etiquetas correctas y buenas prácticas SEO.</p></li>
+          <li class="skill reveal"><span class="skill__icon">🎨</span><h3>CSS3 moderno</h3><p>Grid, Flexbox, variables CSS, animaciones y responsive design.</p></li>
+          <li class="skill reveal"><span class="skill__icon">⚡</span><h3>JavaScript</h3><p>DOM, eventos, fetch, localStorage y lógica sin frameworks.</p></li>
+          <li class="skill reveal"><span class="skill__icon">🌿</span><h3>Git y GitHub</h3><p>Commits, ramas, repositorios remotos y GitHub Pages.</p></li>
+          <li class="skill reveal"><span class="skill__icon">📱</span><h3>Diseño responsive</h3><p>Mobile first, media queries y pruebas en varios dispositivos.</p></li>
+          <li class="skill reveal"><span class="skill__icon">♿</span><h3>Accesibilidad web</h3><p>Contraste, foco visible, ARIA básico y navegación con teclado.</p></li>
+          <li class="skill reveal"><span class="skill__icon">🖌️</span><h3>Figma</h3><p>Prototipos, wireframes y sistemas de color básicos.</p></li>
+          <li class="skill reveal"><span class="skill__icon">🐍</span><h3>Python (básico)</h3><p>Scripts, estructuras de datos y automatización sencilla.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section class="section section--alt" id="proyectos">
+      <div class="container">
+        <h2 class="section__title reveal">Proyectos</h2>
+        <p class="section__subtitle reveal">Prácticas y trabajos reales</p>
+
+        <div class="projects">
+
+          <article class="project reveal">
+            <img src="img/projecte1.jpg" alt="Captura del proyecto Cafetería Aurora" class="project__img" loading="lazy">
+            <div class="project__body">
+              <h3 class="project__title">Cafetería Aurora — Landing Page</h3>
+              <p class="project__desc">
+                Página de aterrizaje para una cafetería de barrio: menú, galería y formulario
+                de reserva. Maquetada con Grid y Flexbox, 100% responsive.
+              </p>
+              <ul class="tags">
+                <li>HTML</li><li>CSS</li><li>Responsive</li>
+              </ul>
+              <div class="project__links">
+                <a href="(enlace-al-repo)" class="link" target="_blank" rel="noopener">Código →</a>
+                <a href="(enlace-a-la-demo)" class="link" target="_blank" rel="noopener">Demo →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <img src="img/projecte2.jpg" alt="Captura del proyecto Lista de Tareas" class="project__img" loading="lazy">
+            <div class="project__body">
+              <h3 class="project__title">TaskFlow — Lista de tareas</h3>
+              <p class="project__desc">
+                Aplicación de tareas con JavaScript puro: crear, completar y eliminar tareas,
+                filtros y persistencia con localStorage.
+              </p>
+              <ul class="tags">
+                <li>JavaScript</li><li>localStorage</li><li>DOM</li>
+              </ul>
+              <div class="project__links">
+                <a href="(enlace-al-repo)" class="link" target="_blank" rel="noopener">Código →</a>
+                <a href="(enlace-a-la-demo)" class="link" target="_blank" rel="noopener">Demo →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <img src="img/projecte3.jpg" alt="Captura del proyecto Portafolio Personal" class="project__img" loading="lazy">
+            <div class="project__body">
+              <h3 class="project__title">Portafolio Personal</h3>
+              <p class="project__desc">
+                Este mismo sitio: HTML, CSS y JS sin dependencias, con modo claro/oscuro,
+                animaciones al hacer scroll y despliegue en GitHub Pages.
+              </p>
+              <ul class="tags">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git</li>
+              </ul>
+              <div class="project__links">
+                <a href="(enlace-al-repo)" class="link" target="_blank" rel="noopener">Código →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OBJETIVOS ===== -->
+    <section class="section" id="objetivos">
+      <div class="container">
+        <h2 class="section__title reveal">Objetivos profesionales</h2>
+        <p class="section__subtitle reveal">Hacia dónde quiero ir</p>
+
+        <div class="goals">
+          <div class="goal reveal">
+            <h3>Corto plazo</h3>
+            <p>Incorporarme como desarrollador frontend junior o en prácticas y seguir
+            aprendiendo dentro de un equipo real, con revisiones de código y buenas prácticas.</p>
+          </div>
+          <div class="goal reveal">
+            <h3>Medio plazo</h3>
+            <p>Dominar un framework moderno (React o Vue) sin perder la base de JavaScript
+            y participar en proyectos completos, de la maqueta al despliegue.</p>
+          </div>
+          <div class="goal reveal">
+            <h3>Largo plazo</h3>
+            <p>Especializarme en accesibilidad y rendimiento web, y poder mentorizar a
+            personas que empiezan, igual que otros me ayudaron a mí.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="section section--alt" id="contacto">
+      <div class="container">
+        <h2 class="section__title reveal">Contacto</h2>
+        <p class="section__subtitle reveal">¿Hablamos?</p>
+
+        <div class="contact reveal">
+          <p class="contact__text">
+            Estoy abierto a prácticas, proyectos junior y colaboraciones. Escríbeme y te
+            respondo en menos de 48 horas.
+          </p>
+
+          <ul class="contact__list">
+            <li>
+              <span class="contact__label">Email</span>
+              <a href="mailto:alex.ruiz.dev@gmail.com">alex.ruiz.dev@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact__label">GitHub</span>
+              <a href="(https://github.com/tu-usuario)" target="_blank" rel="noopener">(github.com/tu-usuario)</a>
+            </li>
+            <li>
+              <span class="contact__label">LinkedIn</span>
+              <a href="(https://www.linkedin.com/in/tu-usuario)" target="_blank" rel="noopener">(linkedin.com/in/tu-usuario)</a>
+            </li>
+            <li>
+              <span class="contact__label">Teléfono</span>
+              <span>(+34 600 000 000)</span>
+            </li>
+          </ul>
+
+          <a href="mailto:alex.ruiz.dev@gmail.com" class="btn btn--primary">Enviar un correo</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> (Tu Nombre). Hecho a mano con HTML, CSS y JavaScript.</p>
+      <a href="#inicio" class="footer__top">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
